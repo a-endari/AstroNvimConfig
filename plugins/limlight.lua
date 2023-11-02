@@ -1,1 +1,1 @@
-return {"junegunn/limelight.vim"}
+return { "junegunn/limelight.vim", ft = { "markdown", "text" } }
