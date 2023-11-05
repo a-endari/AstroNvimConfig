@@ -1,0 +1,4 @@
+return {
+  event = { "BufEnter" },
+  "junegunn/rainbow_parentheses.vim",
+}
