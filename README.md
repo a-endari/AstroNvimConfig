@@ -6,24 +6,26 @@ My .files for Astro nvim
 
 ### Install AstroNvim
 
-    - Linux and Mac
-    ```
-    git clone https://github.com/kabinspace/AstroNvim_user.git ~/.config/nvim
-    ```
+- Linux and Mac
 
-    - Windows
-    ```
-    git clone https://github.com/kabinspace/AstroNvim_user.git ~/AppData/Local/nvim
-    ```
+  ```
+  git clone https://github.com/kabinspace/AstroNvim_user.git ~/.config/nvim
+  ```
+
+- Windows
+  ```
+  git clone https://github.com/kabinspace/AstroNvim_user.git ~/AppData/Local/nvim
+  ```
 
 ### Install User Settings
 
-    - Linux and Mac
-    ```
-    git clone https://github.com/kabinspace/AstroNvim_user.git ~/.config/nvim/lua/user
-    ```
+- Linux and Mac
 
-    - Windows
-    ```
-    git clone https://github.com/kabinspace/AstroNvim_user.git ~/AppData/Local/nvim/lua/user
-    ```
+  ```
+  git clone https://github.com/kabinspace/AstroNvim_user.git ~/.config/nvim/lua/user
+  ```
+
+- Windows
+  ```
+  git clone https://github.com/kabinspace/AstroNvim_user.git ~/AppData/Local/nvim/lua/user
+  ```
