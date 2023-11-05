@@ -14,7 +14,7 @@ My .files for Astro nvim
 
 - Windows
   ```
-  git clone https://github.com/kabinspace/AstroNvim_user.git ~/AppData/Local/nvim
+  git clone https://github.com/kabinspace/AstroNvim_user.git $env:LOCALAPPDATA\Local\nvim
   ```
 
 ### Install User Settings
@@ -27,5 +27,5 @@ My .files for Astro nvim
 
 - Windows
   ```
-  git clone https://github.com/kabinspace/AstroNvim_user.git ~/AppData/Local/nvim/lua/user
+  git clone https://github.com/kabinspace/AstroNvim_user.git $env:LOCALAPPDATA\Local\nvim\lua\user
   ```
