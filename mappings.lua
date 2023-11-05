@@ -17,6 +17,9 @@ return {
     ["<C-k>"] = { "<C-o>gk" },
     ["<C-l>"] = { "<Right>" },
   },
+  v = {
+    
+  },
   -- Use ESC in terminal
   vim.keymap.set("t", "<Esc>", "<C-\\><C-n>"),
   vim.keymap.set("n", "<leader>Z", ":ZenMode<CR>:Limelight 0.9<CR>", { desc = "Zen Mode" }),

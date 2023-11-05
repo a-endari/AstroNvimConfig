@@ -1,4 +1,6 @@
 return {
+
+  -- highlight stuff
   highlights = {
     init = function()
       -- set highlights for all themes
@@ -13,19 +15,30 @@ return {
       local red = get_hlgroup("Error").fg
       -- return a table of highlights for telescope based on colors gotten from highlight groups
       return {
-        TelescopeBorder = { fg = bg_alt, bg = bg },
+        -- TelescopeBorder = { fg = bg_alt, bg = bg },
         TelescopeNormal = { bg = bg },
-        TelescopePreviewBorder = { fg = bg, bg = bg },
+        -- TelescopePreviewBorder = { fg = bg, bg = bg },
         TelescopePreviewNormal = { bg = bg },
         TelescopePreviewTitle = { fg = bg, bg = green },
-        TelescopePromptBorder = { fg = bg_alt, bg = bg_alt },
+        -- TelescopePromptBorder = { fg = bg_alt, bg = bg_alt },
         TelescopePromptNormal = { fg = fg, bg = bg_alt },
         TelescopePromptPrefix = { fg = red, bg = bg_alt },
         TelescopePromptTitle = { fg = bg, bg = red },
-        TelescopeResultsBorder = { fg = bg, bg = bg },
+        -- TelescopeResultsBorder = { fg = bg, bg = bg },
         TelescopeResultsNormal = { bg = bg },
         TelescopeResultsTitle = { fg = bg, bg = bg },
       }
     end,
   },
+  polish = function()
+    -- any setting can go here!
+
+    vim.opt.showmode = true
+    vim.opt.termguicolors = true
+
+    -- Bidirectional language stuff
+    vim.opt.encoding = "utf8"
+    vim.opt.termbidi = true
+    vim.opt.arabicshape = true
+  end,
 }
