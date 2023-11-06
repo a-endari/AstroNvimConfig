@@ -1,9 +1,0 @@
-return {
-
-  "AstroNvim/astrocommunity",
-  { import = "astrocommunity.colorscheme.kanagawa-nvim", enabled = true },
-  -- { import = "astrocommunity.colorscheme.tokyonight-nvim" },
-  -- { import = "astrocommunity.pack.python" },
-  -- { import = "astrocommunity.colorscheme.tokyonight-nvim" },
-  -- { import = "astrocommunity.colorscheme.sonokai" },
-}
