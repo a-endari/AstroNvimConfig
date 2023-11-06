@@ -1,0 +1,26 @@
+return {
+  n = {
+
+    ["<leader>br"] = {
+      ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
+      desc = "File Browser",
+    },
+  },
+  i = {
+    -- to navigate while typing
+    ["<C-h>"] = { "<Left>" },
+    ["<C-j>"] = { "<C-o>gj" },
+    ["<C-k>"] = { "<C-o>gk" },
+    ["<C-l>"] = { "<Right>" },
+  },
+  v = {},
+  -- Use ESC in terminal
+  vim.keymap.set("t", "<Esc>", "<C-\\><C-n>"),
+
+  vim.api.nvim_set_keymap("n", "<S-Tab>", ":bprev<CR>", {
+    noremap = true,
+  }),
+  vim.api.nvim_set_keymap("n", "<Tab>", ":bnext<CR>", {
+    noremap = true,
+  }),
+}
