@@ -1,63 +1,66 @@
-local opt = vim.opt
-local g = vim.g
+-- set vim options here (vim.<first_key>.<second_key> = value)
+return {
+  opt = {
+    laststatus = 3, -- global statusline
+    showmode = true,
 
--- vim.cmd.colorscheme "catppuccin-macchiato"
--------------------------------------- options ------------------------------------------
-vim.o.autochdir = true
+    clipboard = "unnamedplus",
+    cursorline = true,
 
-opt.laststatus = 3 -- global statusline
-opt.showmode = false
+    -- RTL support
+    encoding = "utf8",
+    termbidi = true,
+    arabicshape = true,
 
-opt.clipboard = "unnamedplus"
-opt.cursorline = true
+    -- Indenting
+    expandtab = true,
+    shiftwidth = 4,
+    smartindent = true,
+    tabstop = 4,
+    softtabstop = 4,
+    fillchars = {
+      eob = " ",
+    },
+    ignorecase = true,
+    smartcase = true,
+    mouse = "a",
 
--- RTL support
-opt.encoding = "utf8"
-opt.termbidi = true
-opt.arabicshape = true
+    -- Numbers
+    number = true,
+    numberwidth = 2,
+    ruler = false,
+    relativenumber = true, -- sets vim.opt.relativenumber
 
--- Indenting
-opt.expandtab = true
-opt.shiftwidth = 4
-opt.smartindent = true
-opt.tabstop = 4
-opt.softtabstop = 4
-opt.fillchars = {
-  eob = " ",
+    splitbelow = true,
+    splitright = true,
+    termguicolors = true,
+    timeoutlen = 400,
+    undofile = true,
+
+    -- interval for writing swap file to disk, also used by gitsigns
+    updatetime = 250,
+
+    -- set to true or false etc.
+    spell = true, -- sets vim.opt.spell
+    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+    wrap = true, -- sets vim.opt.wrap
+  },
+  g = {
+    -- mapleader = " ", -- sets vim.g.mapleader
+    -- autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
+    vim_markdown_conceal = 2,
+    cmp_enabled = true, -- enable completion at start
+    autopairs_enabled = true, -- enable autopairs at start
+    diagnostics_mode = 3, -- set the visibility of diagnostics in the UI (0=off, 1=only show in status line, 2=virtual text off, 3=all on)
+    icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
+    ui_notifications_enabled = true, -- disable notifications when toggling UI elements
+    resession_enabled = false, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
+  },
+
+  o = {
+    autochdir = true,
+    conceallevel = 2,
+  },
+  -- for settings unkown to astro!
+  vim.opt.whichwrap:append "hl", -- to let h and l go to the next line at the end of line!
 }
-opt.ignorecase = true
-opt.smartcase = true
-opt.mouse = "a"
-
--- Numbers
-opt.number = true
-opt.numberwidth = 2
-opt.ruler = false
-
--- disable nvim intro
-opt.shortmess:append "sI"
-
-opt.signcolumn = "yes"
-opt.splitbelow = true
-opt.splitright = true
-opt.termguicolors = true
-opt.timeoutlen = 400
-opt.undofile = true
-
--- interval for writing swap file to disk, also used by gitsigns
-opt.updatetime = 250
-
--- shell options for windows
--- vim.opt.shell = vim.fn.executable "pwsh" and "pwsh" or "powershell"
--- vim.opt.shellcmdflag =
---     "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
--- vim.opt.shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait"
--- vim.opt.shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode"
--- vim.opt.shellquote = ""
--- vim.opt.shellxquote = ""
-
--- go to previous/next line with h,l,left arrow and right arrow
--- when cursor reaches end/beginning of line
-opt.whichwrap:append "<>[]hl"
-
-g.mapleader = " "

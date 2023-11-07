@@ -1,10 +1,14 @@
-# AstroNvimConfig
+# AstroNvimConfig by A.E
 
-My .files for Astro nvim
+These are plugins and configs for AstroNvim distribution which I personally use. and you are wellcome to try 😉
 
 ## To use the configs:
 
-### Install AstroNvim
+### Requirements
+
+- Neovim : Instal from [NeoVim.io](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+
+### AstroNvim
 
 - Linux and Mac
 
