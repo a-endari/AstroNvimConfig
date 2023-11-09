@@ -13,24 +13,25 @@ These are plugins and configs for AstroNvim distribution which I personally use.
 - Linux and Mac
 
   ```
- git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-nvim
+   git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+   nvim
   ```
 
 - Windows
   ```
-git clone --depth 1 https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
-nvim  ```
+  git clone --depth 1 https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
+  nvim  
+  ```
 
 ### Install User Settings
 
 - Linux and Mac
 
   ```
-  git clone https://github.com/kabinspace/AstroNvim_user.git ~/.config/nvim/lua/user
+  git clone https://github.com/a-endari/AstroNvimConfig.git ~/.config/nvim/lua/user
   ```
 
 - Windows
   ```
-  git clone https://github.com/kabinspace/AstroNvim_user.git $env:LOCALAPPDATA\Local\nvim\lua\user
+  git clone https://github.com/a-endari/AstroNvimConfig.git $env:LOCALAPPDATA\Local\nvim\lua\user
   ```
