@@ -1,6 +1,6 @@
 # AstroNvimConfig by A.E
 
-These are plugins and configs for AstroNvim distribution which I personally use. and you are wellcome to try 😉
+These are plugins and configs for AstroNvim distribution which I personally use. And you are welcome to try 😉
 
 ## To use the configs:
 
@@ -20,7 +20,7 @@ These are plugins and configs for AstroNvim distribution which I personally use.
 - Windows
   ```
   git clone --depth 1 https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
-  nvim  
+  nvim
   ```
 
 ### Install User Settings
