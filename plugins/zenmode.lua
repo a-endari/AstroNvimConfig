@@ -26,4 +26,5 @@ return {
     },
   },
   ft = { "markdown" },
+  cmd = { "ZenMode" },
 }

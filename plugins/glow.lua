@@ -6,5 +6,6 @@ return {
       width = 120,
     }
   end,
-  cmd = "Glow",
+  ft = { "markdown" },
+  -- cmd = "Glow",
 }

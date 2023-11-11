@@ -15,6 +15,12 @@ return {
   ft = {"python", markdown},
 
 
+  keys = {
+    { "<Leader>st",":Something<cr>" },
+    { "<Leader>se", ":SomethingElse<CR>" },
+  },
+  cmd = {"Command1", "Command2"},
+
   -- works the same as config = function()
   --   require("sample_repository").setup(...)
   -- end,
