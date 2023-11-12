@@ -42,6 +42,7 @@ return {
 
     -- set to true or false etc.
     spell = true, -- sets vim.opt.spell
+    spelllang = { "en", "de" },
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = true, -- sets vim.opt.wrap
   },

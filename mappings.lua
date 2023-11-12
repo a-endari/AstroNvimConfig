@@ -17,6 +17,7 @@ return {
   -- Use ESC in terminal
   vim.keymap.set("t", "<Esc>", "<C-\\><C-n>"),
 
+  -- Use Tab to navigate tabs in normal mode!
   vim.api.nvim_set_keymap("n", "<S-Tab>", ":bprev<CR>", {
     noremap = true,
   }),
