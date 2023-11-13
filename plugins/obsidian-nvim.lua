@@ -32,7 +32,7 @@ return {
     mappings = {},
 
     templates = {
-      subdir = "templates",
+      -- subdir = "templates",
       date_format = "%Y-%m-%d-%a",
       time_format = "%H:%M",
     },
