@@ -1,6 +1,7 @@
 return {
   n = {
 
+    ["<Leader>;"] = { ":FineCmdline<CR>", desc = "FloatCommand" },
     ["<leader>br"] = {
       ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
       desc = "File Browser",

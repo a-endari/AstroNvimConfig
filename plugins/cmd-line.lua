@@ -43,7 +43,7 @@ return {
       },
     }
   end,
-  keys = {
-    { ";", "<cmd>FineCmdline<CR>" },
-  },
+  -- keys = {
+  --   { "<C-;>", ":FineCmdline<CR>" },
+  -- },
 }
