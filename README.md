@@ -25,6 +25,9 @@ These are plugins and configs for AstroNvim distribution which I personally use.
 
 ### Install User Settings
 
+Do this part inside of the Neovim:
+Run `nvim`, then press `"Space"th` to open terminal, now depending on your operating system copy one of the code snippets below and paste it inside Neovim's terminal with `Ctrl + Shift + v` or `Cmd + Shift + v` and hit `Enter`, when done, enter `exit` to close the terminal, and then to install plugins without closing Neovim, press `"Space" pi` and let Lazy install them.
+
 - Linux and Mac
 
   ```
