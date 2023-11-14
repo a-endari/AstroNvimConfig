@@ -26,7 +26,7 @@ return {
     "nvim-telescope/telescope.nvim",
   },
   opts = {
-    dir = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Personal", -- specify the vault location. no need to call 'vim.fn.expand' here
+    dir = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Personal", -- specify the vault location.
     use_advanced_uri = true,
     finder = "telescope.nvim",
     mappings = {},
