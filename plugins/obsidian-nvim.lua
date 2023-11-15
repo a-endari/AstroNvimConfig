@@ -33,8 +33,16 @@ return {
 
     templates = {
       -- subdir = "templates",
-      date_format = "%Y-%m-%d-%a",
+      date_format = "YYYY MMMM DDDD",
+      -- date_format = "%Y-%m-%d-%a",
       time_format = "%H:%M",
+    },
+    syntax = {
+      enable = true, -- set to false to disable
+      chars = {
+        todo = "󰄱", -- change to "☐" if you don't have a patched font
+        done = "", -- change to "✔" if you don't have a patched font
+      },
     },
     workspaces = {
       {

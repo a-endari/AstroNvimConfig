@@ -4,7 +4,7 @@ return {
     laststatus = 3, -- global statusline
     showmode = true,
 
-    cmdheight = 1, -- to show the commandline results
+    -- cmdheight = 1, -- to show the commandline results
 
     clipboard = "unnamedplus",
     cursorline = true,
