@@ -26,58 +26,58 @@ return {
     "nvim-telescope/telescope.nvim",
   },
   opts = {
-    dir = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Personal", -- specify the vault location.
-    use_advanced_uri = true,
-    finder = "telescope.nvim",
-    mappings = {},
-
-    templates = {
-      -- subdir = "templates",
-      date_format = "YYYY MMMM DDDD",
-      -- date_format = "%Y-%m-%d-%a",
-      time_format = "%H:%M",
-    },
-    syntax = {
-      enable = true, -- set to false to disable
-      chars = {
-        todo = "󰄱", -- change to "☐" if you don't have a patched font
-        done = "", -- change to "✔" if you don't have a patched font
-      },
-    },
-    workspaces = {
-      {
-        name = "Personal",
-        path = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Personal",
-      },
-      {
-        name = "Work",
-        path = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Work",
-      },
-      {
-        name = "German",
-        path = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/German",
-      },
-      {
-        name = "Journal",
-        path = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Journal",
-      },
-    },
-
-    note_frontmatter_func = function(note)
-      -- This is equivalent to the default frontmatter function.
-      local out = { id = note.id, aliases = note.aliases, tags = note.tags }
-      -- `note.metadata` contains any manually added fields in the frontmatter.
-      -- So here we just make sure those fields are kept in the frontmatter.
-      if note.metadata ~= nil and require("obsidian").util.table_length(note.metadata) > 0 then
-        for k, v in pairs(note.metadata) do
-          out[k] = v
-        end
-      end
-      return out
-    end,
-
-    -- Optional, by default when you use `:ObsidianFollowLink` on a link to an external
-    -- URL it will be ignored but you can customize this behavior here.
-    follow_url_func = vim.ui.open or require("astronvim.utils").system_open,
+    -- dir = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Personal", -- specify the vault location.
+    -- use_advanced_uri = true,
+    -- finder = "telescope.nvim",
+    -- mappings = {},
+    --
+    -- templates = {
+    --   -- subdir = "templates",
+    --   date_format = "YYYY MMMM DDDD",
+    --   -- date_format = "%Y-%m-%d-%a",
+    --   time_format = "%H:%M",
+    -- },
+    -- syntax = {
+    --   enable = true, -- set to false to disable
+    --   chars = {
+    --     todo = "󰄱", -- change to "☐" if you don't have a patched font
+    --     done = "", -- change to "✔" if you don't have a patched font
+    --   },
+    -- },
+    -- workspaces = {
+    --   {
+    --     name = "Personal",
+    --     path = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Personal",
+    --   },
+    --   {
+    --     name = "Work",
+    --     path = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Work",
+    --   },
+    --   {
+    --     name = "German",
+    --     path = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/German",
+    --   },
+    --   {
+    --     name = "Journal",
+    --     path = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Journal",
+    --   },
+    -- },
+    --
+    -- note_frontmatter_func = function(note)
+    --   -- This is equivalent to the default frontmatter function.
+    --   local out = { id = note.id, aliases = note.aliases, tags = note.tags }
+    --   -- `note.metadata` contains any manually added fields in the frontmatter.
+    --   -- So here we just make sure those fields are kept in the frontmatter.
+    --   if note.metadata ~= nil and require("obsidian").util.table_length(note.metadata) > 0 then
+    --     for k, v in pairs(note.metadata) do
+    --       out[k] = v
+    --     end
+    --   end
+    --   return out
+    -- end,
+    --
+    -- -- Optional, by default when you use `:ObsidianFollowLink` on a link to an external
+    -- -- URL it will be ignored but you can customize this behavior here.
+    -- follow_url_func = vim.ui.open or require("astronvim.utils").system_open,
   },
 }
