@@ -36,5 +36,5 @@ Run `nvim`, then press `"Space"th` to open terminal, now depending on your opera
 
 - Windows
   ```
-  git clone https://github.com/a-endari/AstroNvimConfig.git $env:LOCALAPPDATA\Local\nvim\lua\user
+  git clone https://github.com/a-endari/AstroNvimConfig.git $env:LOCALAPPDATA\nvim\lua\user
   ```
