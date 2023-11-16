@@ -2,6 +2,7 @@ return {
   n = {
 
     ["<Leader>;"] = { ":FineCmdline<CR>", desc = "FloatCommand" },
+    ["<Leader>sf"] = { ":ObsidianQuickSwitch<CR>", desc = "Switch Obsidian file" },
     ["<leader>br"] = {
       ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
       desc = "File Browser",
