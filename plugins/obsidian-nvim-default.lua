@@ -31,6 +31,10 @@ return {
         name = "Journal",
         path = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Journal",
       },
+      {
+        name = "ios",
+        path = vim.env.HOME .. "/Dropbox/Apps/remotely-save/IOS VAULT",
+      },
     },
 
     -- see below for full list of options 👇
