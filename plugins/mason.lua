@@ -3,7 +3,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
-      ensure_installed = { "lua_ls", "pyright" },
+      ensure_installed = { "lua_ls", "pyright", "jsonls" },
     },
   },
   {
