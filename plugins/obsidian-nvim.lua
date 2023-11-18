@@ -44,6 +44,10 @@ return {
         path = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Journal",
       },
       {
+        name = "Programming",
+        path = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Programming",
+      },
+      {
         name = "Personal",
         path = vim.env.HOME .. "/Dropbox/Obsidian-Vaults/Personal",
       },
