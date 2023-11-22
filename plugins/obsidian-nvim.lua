@@ -64,5 +64,10 @@ return {
         path = vim.env.HOME .. "/Dropbox/Apps/remotely-save/IOS VAULT",
       },
     },
+    templates = {
+      subdir = "templates",
+      date_format = "%Y-%m-%d-%a",
+      time_format = "%H:%M",
+    },
   },
 }
