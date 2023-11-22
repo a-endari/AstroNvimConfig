@@ -32,7 +32,7 @@ return {
       desc = "Open Today's note",
     },
     {
-      "<Leader>sf",
+      "<Leader>os",
       ":ObsidianQuickSwitch<CR>",
       desc = "List Obsidian Files",
     },
