@@ -19,7 +19,9 @@ These are plugins and configs for AstroNvim distribution which I personally use.
 
 - Windows
   ```
-  git clone --depth 1 https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
+  git clone https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
+  cd $env:LOCALAPPDATA\nvim
+  git reset --hard 0da3fa8
   nvim
   ```
 
